@@ -4,17 +4,17 @@ import Head from "next/head";
 
 const blogs = [
   {
-    title: "The Future of B2B Sales Is Here — and It's More Exciting Than Ever! 🔥",
+    title: "The Future of B2B Sales Is Here — and It&apos;s More Exciting Than Ever! 🔥",
     date: "May 22, 2025",
     summary:
       "Explore how Diallockai revolutionizes B2B sales with personalized outreach, time-saving automation, and smarter workflows for sales teams.",
     content: (
       <>
         <p>
-          For the past few weeks, our sales team had the incredible opportunity to demo DialLock AI’s B2B Sales Agent to company founders and sales representatives.
+          For the past few weeks, our sales team had the incredible opportunity to demo DialLock AI&apos;s B2B Sales Agent to company founders and sales representatives.
         </p>
         <p>
-          At first, many thought it was just another "email automation" tool. But as the demo unfolded, something amazing happened: They saw their dream sales workflow come alive.
+          At first, many thought it was just another &quot;email automation&quot; tool. But as the demo unfolded, something amazing happened: They saw their dream sales workflow come alive.
         </p>
 
         <h2>The Challenge Today</h2>
@@ -29,7 +29,7 @@ const blogs = [
 
         <h2>What Makes Diallockai Different?</h2>
         <ul className="list-disc list-inside mb-6">
-          <li>❌ We don't replace humans — we make them more productive.</li>
+          <li>❌ We don&apos;t replace humans — we make them more productive.</li>
           <li>❌ No bulk spamming.</li>
           <li>❌ No templated or robotic emails.</li>
           <li>❌ No complex software that drains your time and budget.</li>
@@ -41,11 +41,11 @@ const blogs = [
 
         <h2>Our Vision</h2>
         <p>
-          We’re just getting started. Our engineering team is working passionately to build a future where B2B sales is smarter, faster, and more human-centered. 💯
+          We are just getting started. Our engineering team is working passionately to build a future where B2B sales is smarter, faster, and more human-centered. 💯
         </p>
 
         <p>
-          If you’re ready to experience the future of sales, visit <a href="https://www.diallockai.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.diallockai.com</a> and book a demo now.
+          If you are ready to experience the future of sales, visit <a href="https://www.diallockai.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">www.diallockai.com</a> and book a demo now.
         </p>
 
         <p>
@@ -62,7 +62,7 @@ const blogs = [
     title: "🚨 Stop Drowning Your Sales Team in Repetitive Tasks — AI Is Here to Help!",
     date: "May 23, 2025",
     summary:
-      "Discover how DialLock AI’s plug-and-play sales automation frees your team to focus on closing deals and drives enterprise-grade results.",
+      "Discover how DialLock AI is plug-and-play sales automation frees your team to focus on closing deals and drives enterprise-grade results.",
     content: (
       <>
         <p>
@@ -71,8 +71,8 @@ const blogs = [
 
         <h2>The Reality Today</h2>
         <ul className="list-disc list-inside mb-6">
-          <li>Most "sales automation" tools aren’t truly automated.</li>
-          <li>Companies claim to provide “Personalized” emails but they still sound like templates.</li>
+          <li>Most &quot;sales automation&quot; tools are not truly automated.</li>
+          <li>Companies claim to provide &ldquo;Personalized&rdquo; emails but they still sound like templates.</li>
           <li>Your team juggles tools instead of closing deals.</li>
         </ul>
 
@@ -81,9 +81,9 @@ const blogs = [
           Built for humans, not to replace them. DialLock AI is designed based on the feedback from hundreds of B2B salespeople about their pain points and expected outcomes.
         </p>
 
-        <h2>What’s Inside (So Far)</h2>
+        <h2>What is Inside (So Far)</h2>
         <ul className="list-disc list-inside mb-6">
-          <li>✔️ Researches your target companies & decision-makers.</li>
+          <li>✔️ Researches your target companies &amp; decision-makers.</li>
           <li>✔️ Writes truly personalized emails (no templates here).</li>
           <li>✔️ Sends timely, smart follow-ups — automatically.</li>
         </ul>
@@ -99,7 +99,7 @@ const blogs = [
         </p>
 
         <p>
-          👉 Try it now. See the impact. Close more deals. Free up your team’s time for what matters. Don’t miss the chance to transform your sales process.
+          👉 Try it now. See the impact. Close more deals. Free up your teams time for what matters. Do not miss the chance to transform your sales process.
         </p>
 
         <p className="italic text-gray-600 mt-6">
@@ -129,7 +129,7 @@ export default function BlogPage() {
   return (
     <>
       <Head>
-        <title>DialLock AI Blog - B2B Sales Automation & AI Sales Tips</title>
+        <title>DialLock AI Blog - B2B Sales Automation &amp; AI Sales Tips</title>
         <meta
           name="description"
           content="Read the latest insights on B2B sales automation, AI sales agents, personalized outreach, and how DialLock AI is transforming sales workflows."
@@ -169,11 +169,7 @@ export default function BlogPage() {
               </header>
 
               <section className="prose prose-indigo max-w-none text-gray-800">
-                {blog.content ? (
-                  blog.content
-                ) : (
-                  <p>{blog.summary}</p>
-                )}
+                {blog.content ? blog.content : <p>{blog.summary}</p>}
               </section>
             </article>
           ))}

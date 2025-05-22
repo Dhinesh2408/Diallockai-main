@@ -3,6 +3,7 @@
 'use client';
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const services = [
   {
@@ -95,7 +96,7 @@ export default function FullServicesPage() {
                 ))}
               </ul>
             </div>
-            <img
+            <Image
               src={service.image}
               alt={service.heading}
               className="lg:w-1/2 w-full rounded-3xl shadow-xl border border-gray-200"

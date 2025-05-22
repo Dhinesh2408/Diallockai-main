@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -10,6 +9,7 @@ import Services from "./components/Services";
 import Savings from "./components/Savings";
 import Support from "./components/Support";
 import AIWorkflow from "./components/Workflow";
+import Image from "next/image";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -77,9 +77,11 @@ export default function Home() {
             className="w-full h-full"
           ></iframe>
         ) : (
-          <img
+          <Image
             src="https://img.youtube.com/vi/b07W6BfVpBQ/hqdefault.jpg"
             alt="Video thumbnail"
+            width={1000}
+            height={562}
             className="w-full h-full object-cover"
           />
         )}
