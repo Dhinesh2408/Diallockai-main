@@ -47,7 +47,7 @@ export default function EarningsCalculator() {
   };
 
   return (
-    <section className="bg-[#f4f5f7] text-gray-900 py-16 px-6">
+    <section className="bg-white text-gray-900 py-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-4xl font-bold mb-4"
@@ -63,7 +63,7 @@ export default function EarningsCalculator() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          See how much DialLock AI can save your Sales & Support teams.
+          See how much Diallockai can save your Sales & Support teams.
         </motion.p>
 
         <motion.div

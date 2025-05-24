@@ -12,22 +12,28 @@ type Step = {
 
 const steps: Step[] = [
   {
-    title: "1: Smart Prospecting with AI",
+    title: "User Settings Configuration",
     description:
-      "Leverage artificial intelligence to identify high-conversion sales leads through intelligent data analysis, replacing ineffective cold call lists.",
-    image: "/ss.png",
+      "After logging in, configure your user settings by entering job details and SMTP/IMAP credentials to enable secure email access for seamless sending and receiving of emails.",
+    image: "/ss.png", // replace with your relevant image
   },
   {
-    title: "2: Personalized Outreach Automation",
+    title: "Campaign Creation & Lead Upload",
     description:
-      "DialLock AI automates personalized sales messages and follow-ups to increase customer engagement and boost conversion rates.",
-    image: "/ss.png",
+      "Create highly targeted email campaigns by uploading lead data, specifying campaign details, and designing customized follow-up sequences for effective client outreach and lead nurturing.",
+    image: "/ss.png", // replace with your relevant image
   },
   {
-    title: "3: Intelligent Sales Follow-Up",
+    title: "Communications Management Dashboard",
     description:
-      "AI-powered adaptive follow-ups respond dynamically to customer engagement, ensuring natural communication that drives sales success.",
-    image: "/ss.png",
+      "Manage all your campaigns and associated leads in one centralized dashboard. Select any campaign to view and track the progress of your leads and email interactions in real-time.",
+    image: "/ss.png", // replace with your relevant image
+  },
+  {
+    title: "AI-Powered Email Interaction & Research",
+    description:
+      "Leverage DIALLOCKAI’s AI to generate personalized email drafts for each lead. Review, customize, and send emails easily. Access the 'Research' section for client-specific insights, enabling highly tailored and effective communication.",
+    image: "/ss.png", // replace with your relevant image
   },
 ];
 
@@ -54,7 +60,7 @@ function WorkflowStep({ step, isEven, index }: { step: Step; isEven: boolean; in
       <div className="lg:w-1/2 w-full max-w-xl flex-shrink-0">
         <Image
           src={step.image}
-          alt={`AI sales workflow step: ${step.title}`}
+          alt={`DIALLOCKAI workflow step: ${step.title}`}
           width={480}
           height={320}
           className="rounded-lg shadow-md object-cover border border-gray-200"
@@ -81,11 +87,11 @@ export default function AiWorkflow() {
   return (
     <section
       id="ai-workflow"
-      aria-label="AI Sales Workflow Steps"
+      aria-label="DIALLOCKAI Email Campaign AI Workflow Steps"
       className="py-16 px-6 bg-[#f4f5f7] text-gray-900 scroll-mt-16"
     >
       <h2 className="text-4xl md:text-5xl font-extrabold mb-12 text-center font-poppins tracking-wide">
-        AI Workflow Automation
+        AI-Powered Email Sales Workflow
       </h2>
 
       <div className="max-w-6xl mx-auto space-y-16">

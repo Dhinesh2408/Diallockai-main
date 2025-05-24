@@ -1,9 +1,9 @@
 import { Gift, Users, Info } from "lucide-react";
 
 export const metadata = {
-  title: "Referral Program - DialLock AI",
+  title: "Referral Program - Diallockai",
   description:
-    "Join DialLock AI's Referral Program today and earn gift cards, gadgets, and exclusive bonuses for every successful referral!",
+    "Join Diallockai's Referral Program today and earn gift cards, gadgets, and exclusive bonuses for every successful referral!",
 };
 
 export default function ReferralProgram() {
@@ -14,7 +14,7 @@ export default function ReferralProgram() {
           🎁 Referral Program
         </h1>
         <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-          Invite your friends to DialLock AI and earn exciting rewards like gift cards, gadgets, and more!
+          Invite your friends to Diallockai and earn exciting rewards like gift cards, gadgets, and more!
           Start sharing your unique link and watch your rewards grow.
         </p>
       </header>

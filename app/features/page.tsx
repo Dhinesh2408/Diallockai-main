@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Features - DialLock AI",
+  title: "Features - Diallockai",
   description: "Explore the features to your business with AI-powered sales tools.",
 };
 export default function Features() {

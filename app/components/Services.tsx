@@ -60,14 +60,14 @@ export default function Services() {
   return (
     <section
       id="services"
-      aria-label="DialLock AI Sales Outreach Services"
+      aria-label="Diallockai Sales Outreach Services"
       className="max-w-6xl mx-auto px-6 py-20 relative"
     >
       {/* Top Bar with Animated Problem Statement */}
       <div className="w-full bg-gradient-to-r from-[#d0e2ff] to-[#f0f4ff] text-blue-900 font-extrabold text-center text-2xl md:text-3xl py-10 rounded-xl mb-20 shadow-sm select-none font-playfair">
         <span ref={typedRef} className="block min-h-[2.5rem]" />
         <p className="text-gray-800 text-base md:text-lg font-medium mt-3 font-inter">
-          <strong>Diallock AI</strong> empowers seamless sales outreach and solves outbound engagement challenges.
+          <strong>Diallockai</strong> empowers seamless sales outreach and solves outbound engagement challenges.
         </p>
       </div>
 

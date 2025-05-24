@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Partner Program - DialLock AI",
+  title: "Partner Program - Diallockai",
   description: "Join the DialLock AI Partner Program and scale your business with advanced AI sales tools, exclusive benefits, and priority support.",
 };
 
@@ -10,7 +10,7 @@ export default function PartnerProgram() {
       <section className="relative bg-blue-700 text-white pb-20 pt-32 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
-            🤝 Partner with <span className="text-yellow-300">DialLock AI</span>
+            🤝 Partner with <span className="text-yellow-300">Diallockai</span>
           </h1>
           <p className="text-lg leading-relaxed mb-6">
             Join our Partner Program and grow your business with powerful AI sales tools, exclusive support, and revenue opportunities.

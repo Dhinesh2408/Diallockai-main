@@ -1,22 +1,20 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
 
 interface PopupProps {
   onClose: () => void;
 }
 
 const Popup: React.FC<PopupProps> = ({ onClose }) => {
-  const router = useRouter();
-
   const handleBookNow = () => {
-    onClose();           // Close the popup
-    router.push("https://cal.com/dhinesh-valentine-flbxpp/test?overlayCalendar=true"); // Navigate to calendar schedule page
+    onClose(); // Close the popup
+    // Open the booking link in a new tab
+    window.open("https://cal.com/team-diallock-ai/intro?overlayCalendar=true", "_blank");
   };
 
   return (
-    <div className="fixed top-25 right-6 z-50">
+    <div className="fixed top-24 right-6 z-50">
       <div className="bg-white p-4 rounded-xl shadow-lg w-72 relative border border-blue-200">
         {/* Close Button */}
         <button

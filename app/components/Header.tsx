@@ -48,23 +48,23 @@ export default function Header() {
   const handleBookDemoClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setIsOpen(false);
-    window.open("https://cal.com/dhinesh-valentine-flbxpp/test", "_blank", "noopener,noreferrer");
+    window.open(
+      "https://cal.com/team-diallock-ai/intro",
+      "_blank",
+      "noopener,noreferrer"
+    );
   };
 
   return (
     <>
       {/* Top Announcement Banner */}
-      <div
-        className="fixed top-0 inset-x-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 text-white text-center py-2 shadow-md"
-        role="status"
-        aria-label="Live Announcement Banner"
-      >
-        <div
-          className="flex animate-marquee whitespace-nowrap text-sm font-semibold tracking-wide font-sans"
-        >
+      <div className="fixed top-0 inset-x-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 text-white text-center py-1 shadow-md">
+        <div className="flex animate-marquee whitespace-nowrap text-sm font-semibold tracking-wide font-sans">
           {["MVP  is  Live  Now", "MVP  is  Live  Now", "MVP  is  Live  Now"].map(
             (text, i) => (
-              <span key={i} className="mx-24">{text}</span>
+              <span key={i} className="mx-24">
+                {text}
+              </span>
             )
           )}
         </div>
@@ -72,7 +72,7 @@ export default function Header() {
 
       {/* Header */}
       <header className="fixed top-8 inset-x-0 z-40 bg-gray-50 text-black border-b border-gray-200 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center relative">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center relative">
           {/* Logo */}
           <Link
             href="/"
@@ -92,7 +92,7 @@ export default function Header() {
                 d="M12 15v2m-6-6V9a6 6 0 1112 0v2m-6 0h.01"
               />
             </svg>
-            <span>DIALLOCK AI</span>
+            <span>DIALLOCKAI</span>
           </Link>
 
           {/* Navigation center */}
@@ -157,7 +157,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-8 ml-auto">
             {/* Modified Book Demo to open external link */}
             <a
-              href="https://cal.com/dhinesh-valentine-flbxpp/test"
+              href="https://cal.com/team-diallock-ai/intro"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-blue-600 hover:text-blue-700 transition cursor-pointer"
@@ -195,12 +195,32 @@ export default function Header() {
             aria-label="Toggle mobile menu"
           >
             {isOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 8h16M4 16h16"
+                />
               </svg>
             )}
           </button>
@@ -223,17 +243,13 @@ export default function Header() {
               ))}
 
               <li>
-                {/* Modified Book Demo for mobile menu */}
+                {/* Book Demo - mobile */}
                 <a
-                  href="https://cal.com/dhinesh-valentine-flbxpp/test"
+                  href="https://cal.com/team-diallock-ai/intro"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-blue-600 hover:text-blue-700 transition"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsOpen(false);
-                    window.open("https://cal.com/dhinesh-valentine-flbxpp/test", "_blank", "noopener,noreferrer");
-                  }}
+                  onClick={handleBookDemoClick}
                 >
                   Book Demo
                 </a>
